@@ -19,11 +19,11 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/knative/pkg/client/clientset/versioned"
-	authenticationv1alpha1 "github.com/knative/pkg/client/clientset/versioned/typed/authentication/v1alpha1"
-	fakeauthenticationv1alpha1 "github.com/knative/pkg/client/clientset/versioned/typed/authentication/v1alpha1/fake"
-	networkingv1alpha3 "github.com/knative/pkg/client/clientset/versioned/typed/istio/v1alpha3"
-	fakenetworkingv1alpha3 "github.com/knative/pkg/client/clientset/versioned/typed/istio/v1alpha3/fake"
+	clientset "/client/clientset/versioned"
+	authenticationv1alpha1 "/client/clientset/versioned/typed/authentication/v1alpha1"
+	fakeauthenticationv1alpha1 "/client/clientset/versioned/typed/authentication/v1alpha1/fake"
+	networkingv1alpha3 "/client/clientset/versioned/typed/istio/v1alpha3"
+	fakenetworkingv1alpha3 "/client/clientset/versioned/typed/istio/v1alpha3/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

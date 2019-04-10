@@ -19,7 +19,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/knative/pkg/logging/testing"
+	. "/logging/testing"
 )
 
 const (

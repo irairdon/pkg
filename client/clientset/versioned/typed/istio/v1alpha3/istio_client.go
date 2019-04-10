@@ -19,8 +19,8 @@ limitations under the License.
 package v1alpha3
 
 import (
-	v1alpha3 "github.com/knative/pkg/apis/istio/v1alpha3"
-	"github.com/knative/pkg/client/clientset/versioned/scheme"
+	v1alpha3 "/apis/istio/v1alpha3"
+	"/client/clientset/versioned/scheme"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
 )

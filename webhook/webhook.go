@@ -31,11 +31,11 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/knative/pkg/apis"
-	"github.com/knative/pkg/apis/duck"
-	"github.com/knative/pkg/kmp"
-	"github.com/knative/pkg/logging"
-	"github.com/knative/pkg/logging/logkey"
+	"/apis"
+	"/apis/duck"
+	"/kmp"
+	"/logging"
+	"/logging/logkey"
 
 	"github.com/markbates/inflect"
 	"github.com/mattbaird/jsonpatch"

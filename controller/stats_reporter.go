@@ -21,7 +21,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/knative/pkg/metrics"
+	"/metrics"
 	"go.opencensus.io/stats"
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/tag"

@@ -21,10 +21,10 @@ package v1alpha3
 import (
 	time "time"
 
-	istiov1alpha3 "github.com/knative/pkg/apis/istio/v1alpha3"
-	versioned "github.com/knative/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/knative/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha3 "github.com/knative/pkg/client/listers/istio/v1alpha3"
+	istiov1alpha3 "/apis/istio/v1alpha3"
+	versioned "/client/clientset/versioned"
+	internalinterfaces "/client/informers/externalversions/internalinterfaces"
+	v1alpha3 "/client/listers/istio/v1alpha3"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"

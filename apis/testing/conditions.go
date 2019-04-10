@@ -19,8 +19,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/knative/pkg/apis"
-	duckv1b1 "github.com/knative/pkg/apis/duck/v1beta1"
+	"/apis"
+	duckv1b1 "/apis/duck/v1beta1"
 	corev1 "k8s.io/api/core/v1"
 )
 

@@ -16,8 +16,8 @@ import (
 	"os"
 	"testing"
 
-	. "github.com/knative/pkg/logging/testing"
-	"github.com/knative/pkg/metrics/metricskey"
+	. "/logging/testing"
+	"/metrics/metricskey"
 	"go.opencensus.io/stats"
 	"go.opencensus.io/stats/view"
 	"go.opencensus.io/tag"

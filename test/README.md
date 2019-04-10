@@ -31,7 +31,7 @@ These flags are useful for running against an existing cluster, making use of
 your existing
 [environment setup](https://github.com/knative/serving/blob/master/DEVELOPMENT.md#environment-setup).
 
-By importing `github.com/knative/pkg/test` you get access to a global variable
+By importing `/test` you get access to a global variable
 called `test.Flags` which holds the values of
 [the command line flags](/test/README.md#flags).
 
@@ -47,7 +47,7 @@ _See [e2e_flags.go](./e2e_flags.go)._
 debug logs will be emitted to stdout.
 
 We are using a generic
-[FormatLogger](https://github.com/knative/pkg/blob/master/test/logging/logging.go#L49)
+[FormatLogger](https:///blob/master/test/logging/logging.go#L49)
 that can be passed in any existing logger that satisfies it. Test can use the
 generic [logging methods](https://golang.org/pkg/testing/#T) to log info and
 error logs. All the common methods accept generic FormatLogger as a parameter
@@ -170,7 +170,7 @@ _See [cleanup.go](./cleanup.go)._
 Importing [the test library](#test-library) adds flags that are useful for end
 to end tests that need to run against a cluster.
 
-Tests importing [`github.com/knative/pkg/test`](#test-library) recognize these
+Tests importing [`/test`](#test-library) recognize these
 flags:
 
 - [`--kubeconfig`](#specifying-kubeconfig)
@@ -245,9 +245,9 @@ go test ./test --emitmetrics
 ```
 
 - To add additional metrics to a test, see
-  [emitting metrics](https://github.com/knative/pkg/tree/master/test#emit-metrics).
+  [emitting metrics](https:///tree/master/test#emit-metrics).
 - For more info on the format of the metrics, see
-  [metric format](https://github.com/knative/pkg/tree/master/test#emit-metrics).
+  [metric format](https:///tree/master/test#emit-metrics).
 
 [minikube]: https://kubernetes.io/docs/setup/minikube/
 

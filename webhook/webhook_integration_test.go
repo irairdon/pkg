@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/knative/pkg/testing"
+	. "/testing"
 	"github.com/mattbaird/jsonpatch"
 	admissionv1beta1 "k8s.io/api/admission/v1beta1"
 	authenticationv1 "k8s.io/api/authentication/v1"

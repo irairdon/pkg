@@ -30,9 +30,9 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/dynamic/fake"
 
-	"github.com/knative/pkg/apis/duck"
-	duckv1alpha1 "github.com/knative/pkg/apis/duck/v1alpha1"
-	. "github.com/knative/pkg/testing"
+	"/apis/duck"
+	duckv1alpha1 "/apis/duck/v1alpha1"
+	. "/testing"
 )
 
 func TestSimpleList(t *testing.T) {

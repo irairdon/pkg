@@ -24,7 +24,7 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest"
 
-	"github.com/knative/pkg/logging"
+	"/logging"
 )
 
 var (

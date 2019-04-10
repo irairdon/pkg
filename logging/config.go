@@ -25,8 +25,8 @@ import (
 	"go.uber.org/zap/zapcore"
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/knative/pkg/changeset"
-	"github.com/knative/pkg/logging/logkey"
+	"/changeset"
+	"/logging/logkey"
 )
 
 // NewLogger creates a logger with the supplied configuration.

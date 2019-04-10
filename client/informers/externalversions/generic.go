@@ -21,8 +21,8 @@ package externalversions
 import (
 	"fmt"
 
-	v1alpha1 "github.com/knative/pkg/apis/istio/authentication/v1alpha1"
-	v1alpha3 "github.com/knative/pkg/apis/istio/v1alpha3"
+	v1alpha1 "/apis/istio/authentication/v1alpha1"
+	v1alpha3 "/apis/istio/v1alpha3"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 )

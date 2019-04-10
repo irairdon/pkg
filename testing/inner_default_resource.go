@@ -19,7 +19,7 @@ package testing
 import (
 	"context"
 
-	"github.com/knative/pkg/apis"
+	"/apis"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

@@ -21,8 +21,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/knative/pkg/apis"
-	"github.com/knative/pkg/apis/duck"
+	"/apis"
+	"/apis/duck"
 	corev1 "k8s.io/api/core/v1"
 )
 

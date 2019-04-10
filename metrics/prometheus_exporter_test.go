@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/knative/pkg/logging/testing"
+	. "/logging/testing"
 )
 
 func TestNewPrometheusExporter(t *testing.T) {

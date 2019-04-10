@@ -23,7 +23,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/knative/pkg/controller"
+	"/controller"
 )
 
 var _ controller.StatsReporter = (*FakeStatsReporter)(nil)

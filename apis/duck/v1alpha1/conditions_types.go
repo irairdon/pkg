@@ -23,8 +23,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 
-	"github.com/knative/pkg/apis"
-	"github.com/knative/pkg/apis/duck"
+	"/apis"
+	"/apis/duck"
 )
 
 // Conditions is the schema for the conditions portion of the payload

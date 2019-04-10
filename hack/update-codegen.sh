@@ -29,19 +29,19 @@ go install ./vendor/k8s.io/code-generator/cmd/deepcopy-gen
 #                  k8s.io/kubernetes. The output-base is needed for the generators to output into the vendor dir
 #                  instead of the $GOPATH directly. For normal projects this can be dropped.
 ${CODEGEN_PKG}/generate-groups.sh "deepcopy,client,informer,lister" \
-  github.com/knative/pkg/client github.com/knative/pkg/apis \
+  /client /apis \
   "istio:v1alpha3 istio/authentication:v1alpha1" \
   --go-header-file ${REPO_ROOT_DIR}/hack/boilerplate/boilerplate.go.txt
 
 # Only deepcopy the Duck types, as they are not real resources.
 ${CODEGEN_PKG}/generate-groups.sh "deepcopy" \
-  github.com/knative/pkg/client github.com/knative/pkg/apis \
+  /client /apis \
   "duck:v1alpha1,v1beta1" \
   --go-header-file ${REPO_ROOT_DIR}/hack/boilerplate/boilerplate.go.txt
 
 # Depends on generate-groups.sh to install bin/deepcopy-gen
 ${GOPATH}/bin/deepcopy-gen --input-dirs \
-  github.com/knative/pkg/apis,github.com/knative/pkg/logging,github.com/knative/pkg/testing \
+  /apis,/logging,/testing \
   -O zz_generated.deepcopy \
   --go-header-file ${REPO_ROOT_DIR}/hack/boilerplate/boilerplate.go.txt
 

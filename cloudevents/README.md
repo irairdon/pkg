@@ -23,7 +23,7 @@ Select a source to identify the originator of this CloudEvent. It should be a
 valid URI which represents the subject which created the CloudEvent (cloud
 bucket, git repo, etc).
 
-Example CloudEvent Source: `https://github.com/knative/pkg#cloudevents-example`
+Example CloudEvent Source: `https://#cloudevents-example`
 
 And finally, create a struct that will be the data inside the CloudEvent,
 example:
@@ -47,7 +47,7 @@ events to `"http://localhost:8080"`.
 package main
 
 import (
-    "github.com/knative/pkg/cloudevents"
+    "/cloudevents"
     "log"
 )
 
@@ -60,7 +60,7 @@ func main() {
     c := cloudevents.NewClient(
         "http://localhost:8080",
         cloudevents.Builder{
-            Source:    "https://github.com/knative/pkg#cloudevents-example",
+            Source:    "https://#cloudevents-example",
             EventType: "dev.knative.cloudevent.example",
         },
     )
@@ -92,7 +92,7 @@ import (
     "net/http"
     "time"
 
-    "github.com/knative/pkg/cloudevents"
+    "/cloudevents"
 )
 
 type Example struct {
@@ -125,7 +125,7 @@ This is default, but to leverage binary request format:
     c := cloudevents.NewClient(
         "http://localhost:8080",
         cloudevents.Builder{
-            Source:    "https://github.com/knative/pkg#cloudevents-example",
+            Source:    "https://#cloudevents-example",
             EventType: "dev.knative.cloudevent.example",
             Encoding: cloudevents.BinaryV01,
         },
@@ -142,7 +142,7 @@ To leverage structured request format:
     c := cloudevents.NewClient(
         "http://localhost:8080",
         cloudevents.Builder{
-            Source:    "https://github.com/knative/pkg#cloudevents-example",
+            Source:    "https://#cloudevents-example",
             EventType: "dev.knative.cloudevent.example",
             Encoding: cloudevents.StructuredV01,
         },

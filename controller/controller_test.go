@@ -29,9 +29,9 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
 
-	. "github.com/knative/pkg/controller/testing"
-	. "github.com/knative/pkg/logging/testing"
-	. "github.com/knative/pkg/testing"
+	. "/controller/testing"
+	. "/logging/testing"
+	. "/testing"
 )
 
 func TestPassNew(t *testing.T) {

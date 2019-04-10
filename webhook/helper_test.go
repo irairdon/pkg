@@ -30,7 +30,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
 
-	. "github.com/knative/pkg/logging/testing"
+	. "/logging/testing"
 )
 
 func waitForServerAvailable(t *testing.T, serverURL string, timeout time.Duration) error {

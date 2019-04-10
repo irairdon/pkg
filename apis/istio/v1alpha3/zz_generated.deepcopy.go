@@ -21,7 +21,7 @@ limitations under the License.
 package v1alpha3
 
 import (
-	v1alpha1 "github.com/knative/pkg/apis/istio/common/v1alpha1"
+	v1alpha1 "/apis/istio/common/v1alpha1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 )
 

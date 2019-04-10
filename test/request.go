@@ -26,8 +26,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/knative/pkg/test/logging"
-	"github.com/knative/pkg/test/spoof"
+	"/test/logging"
+	"/test/spoof"
 )
 
 // Retrying modifies a ResponseChecker to retry certain response codes.

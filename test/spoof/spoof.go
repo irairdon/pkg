@@ -24,9 +24,9 @@ import (
 	"net/http"
 	"time"
 
-	ingress "github.com/knative/pkg/test/ingress"
-	"github.com/knative/pkg/test/logging"
-	"github.com/knative/pkg/test/zipkin"
+	ingress "/test/ingress"
+	"/test/logging"
+	"/test/zipkin"
 	"github.com/pkg/errors"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/kubernetes"
