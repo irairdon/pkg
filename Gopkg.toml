@@ -24,6 +24,21 @@
 #   go-tests = true
 #   unused-packages = true
 
+[[override]]
+  name = "k8s.io/api"
+  version = "kubernetes-1.13.5"
+
+[[override]]
+  name = "k8s.io/apimachinery"
+  version = "kubernetes-1.13.5"
+
+[[override]]
+  name = "k8s.io/code-generator"
+  version = "kubernetes-1.13.5"
+
+[[override]]
+  name = "k8s.io/client-go"
+  version = "kubernetes-1.13.5"
 
 [[constraint]]
   name = "cloud.google.com/go"
